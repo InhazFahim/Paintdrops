@@ -199,6 +199,11 @@ h6 {
   font-weight: 700;
 }
 
+#companyName{
+  margin: 5% 10% 3% 10% ;
+  font-size: 30px;
+}
+
 .scrolled-offset {
   margin-top: 70px;
 }
@@ -226,7 +231,7 @@ h6 {
 }
 
 .navbar > ul > li {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .navbar a,
@@ -253,6 +258,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   background: #ff8000;
+  color:rgba(0, 0, 0, 0.9)
 }
 
 .navbar .dropdown ul {
