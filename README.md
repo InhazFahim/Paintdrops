@@ -1,2 +1,0 @@
-# Paintdrops
-Portfolio website
