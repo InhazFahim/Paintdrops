@@ -258,7 +258,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   background: #ff8000;
-  color:rgba(0, 0, 0, 0.9)
+  color:rgba(0, 0, 0, 0.9);
 }
 
 .navbar .dropdown ul {
@@ -469,7 +469,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 1000000px 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -501,9 +501,19 @@ h6 {
   border-color: #ff8000;
 }
 
+#hero .logoUp {
+  margin: 0 0 50% 50%;
+  max-height: 250px;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+
+  #hero .logoUp {
+    margin: 0 0 50% 50%;
+    max-height: 250px;
   }
 }
 
@@ -517,11 +527,34 @@ h6 {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    margin: 10% 0 50% -50%;
   }
   #hero h2 {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
     margin-bottom: 30px;
+    margin: -20% -25% 5% -25%;
+    text-align:left;
+    inline-size: 350px;
+  }
+
+  #hero .logoUp {
+    margin: 0 0 400% 1000%;
+    max-height: 100px;
+  }
+
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #e82d2d;
+    color: #fff;
+    margin-left: -30%;
   }
 }
 
@@ -684,6 +717,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services .icon-box {
   text-align: center;
   padding: 80px 20px;
