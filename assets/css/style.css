@@ -48,7 +48,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--thm-base);
+  background: #0c0c0c;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -56,13 +56,19 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--thm-base);
+  line-height: 0;
+}
+
+.back-to-top i:hover{
+  font-size: 28px;
+  color: #0c0c0c;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #0b8b84;
-  color: #fff;
+  background: var(--thm-base);
+  color: #0c0c0c;
 }
 
 .back-to-top.active {
@@ -263,8 +269,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  background: var(--thm-base);
-  color:rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+  color:var(--thm-base);
 }
 
 .navbar .dropdown ul {
@@ -299,6 +305,10 @@ h6 {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
   color: #fff;
+}
+
+.navbar .dropdown ul .active{
+  color: var(--thm-base);
 }
 
 .navbar .dropdown:hover > ul {
@@ -456,6 +466,7 @@ h6 {
   object-fit: cover;
   opacity: 0.8;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -498,8 +509,9 @@ h6 {
   display: inline-block;
   padding: 10px 28px;
   transition: 0.5s;
-  border: 2px solid #e82d2d;
+  border: 2px solid #fff;
   color: #fff;
+  border-radius: 10px;
 }
 
 #hero .btn-get-started:hover {
@@ -514,13 +526,23 @@ h6 {
 
 #hero .btnstart {
   margin: 0 0 20% 20%;
+  color: #fff;
+}
 
+#hero .btnstart .icon{
+  color: #fff;
+  transform: rotate(180deg);
+}
+
+#hero .btnstart .icon:hover{
+  color: var(--thm-base);
+  transform: rotate(540deg);
+  transition: 1.5s;
 }
 
 #hero .bi {
   margin: 2.25rem;
   font-size: 1.5rem;
-  color: var(--thm-base);
 }
 
 
@@ -694,7 +716,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: var(--thm-base);
+  background: #0c0c0c;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -702,7 +724,7 @@ section {
 .why-us .box:hover span,
 .why-us .box:hover h4,
 .why-us .box:hover p {
-  color: #fff;
+  color: var(--thm-base);
 }
 
 /*--------------------------------------------------------------
@@ -848,7 +870,7 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #0b8b84;
+  background: #0c0c0c;
   border: 2px solid var(--thm-base);
 }
 
@@ -1056,7 +1078,7 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #f9f9f9;
+  background: #f1f1f1;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1125,7 +1147,7 @@ section {
   background: var(--thm-base);
   display: inline-block;
   padding: 10px 40px;
-  color: #fff;
+  color: #0c0c0c;
   transition: none;
   font-size: 14px;
   font-weight: 400;
@@ -1134,14 +1156,17 @@ section {
   transition: 0.3s;
 }
 
+
+
 .pricing .box .btn-buy:hover {
   background: #0c0c0c;
+  color: var(--thm-base);
 }
 
 .pricing .featured {
-  background: var(--thm-base);
+  background: #0c0c0c;
   box-shadow: none;
-  color: #fff;
+  color: var(--thm-base);
 }
 
 .pricing .featured h3,
@@ -1149,25 +1174,27 @@ section {
 .pricing .featured ul,
 .pricing .featured ul li,
 .pricing .featured ul .na {
-  color: #0c0c0c;
+  color: var(--thm-base);
 }
 
 .pricing .featured h4 span {
-  color: rgba(64 55 55 / 58%);
+  color: rgba(163, 155, 155, 0.733);
 }
 
 .pricing .featured .btn-wrap {
   padding: 15px;
   text-align: center;
+
 }
 
 .pricing .featured .btn-buy {
   background: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 .pricing .featured .btn-buy:hover {
-  background: #0c0c0c;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--thm-base);
 }
 
 /*--------------------------------------------------------------
